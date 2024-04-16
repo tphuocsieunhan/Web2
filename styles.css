@@ -13,6 +13,7 @@ a {
     text-decoration: none;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -74,7 +75,7 @@ header:hover {
 }
 
 .sub-menu li ul a {
-    font-weight: normal ;
+    font-weight: normal;
     font-size: 12px !important;
 }
 
@@ -95,8 +96,8 @@ header:hover {
     position: relative;
 }
 
-.others > li::after {
-    content:"";
+.others>li::after {
+    content: "";
     display: block;
     width: 1px;
     height: 80%;
@@ -106,7 +107,8 @@ header:hover {
     top: 50%;
     transform: translateY(-50%);
 }
-.others > li:last-child::after { 
+
+.others>li:last-child::after {
     display: none;
 }
 
@@ -131,6 +133,7 @@ header:hover {
     padding-bottom: 30px;
     border-bottom: 2px solid #000;
     overflow: hidden;
+    margin-top: 70px;
 }
 
 .aspect-ratio-169 {
@@ -207,6 +210,27 @@ header:hover {
 }
 
 /* --------------footer----------------- */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.scroll-to-top button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.scroll-to-top button:hover {
+    background-color: grey;
+}
+
 footer {
     text-align: center;
 }
@@ -229,7 +253,7 @@ footer {
     position: relative;
 }
 
-.footer-top li ::after{
+.footer-top li ::after {
     content: "";
     display: block;
     width: 1px;
@@ -257,4 +281,143 @@ footer {
 .footer-bottom {
     margin: 20px;
     text-align: center;
+}
+
+/* Separator */
+.separator {
+    border: 0;
+    height: 5px;
+    /* Độ dày của dòng */
+    background-color: #000;
+    /* Màu sắc của dòng (trong trường hợp này là đen) */
+    margin: 20px 0;
+    /* Khoảng cách trên và dưới dòng */
+}
+
+/*----------cartegory-----------*/
+.row {
+    display: flex;
+    /* Sử dụng flexbox */
+    align-items: flex-start;
+    /* Canh lề trên */
+}
+
+.cartegory {
+    padding: 100px 0 0;
+    margin-left: 70px;
+}
+
+.cartegory-top {
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.cartegory-top p {
+    font-family: var(--main-text-font);
+    margin: 0 12px;
+    font-size: 12px;
+}
+
+.cartegory-left {
+    width: 20%;
+}
+
+.cartegory-right {
+    width: 80%;
+}
+
+.cartegory-right.row {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}
+
+.cartegory-right-top-item {
+    flex: 1; /* Đảm bảo các phần tử cùng chiều rộng */
+    display: flex; /* Sử dụng flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.cartegory-right-top-item button,
+.cartegory-right-top-item select {
+    width: 100%; /* Đảm bảo chiều rộng tối đa */
+    max-width: 200px; /* Điều chỉnh chiều rộng tối đa nếu cần */
+    padding: 8px 12px; /* Điều chỉnh khoảng cách bên trong */
+    background-color: #fff; /* Màu nền */
+    border: 1px solid #ddd; /* Viền */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartegory-right-content {
+    margin-top: 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartegory-right-content-item {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.cartegory-right-content-item img {
+    width: 200px;
+    /* Chiều rộng 100% của phần tử cha */
+    height: 400px;
+    /* Chiều cao tự động tính theo tỉ lệ */
+    max-width: 200px;
+    /* Chiều rộng tối đa của hình ảnh */
+    /* Điều chỉnh chiều cao nếu cần */
+    /* max-height: 200px; */
+}
+
+.cartegory-right-content-item h1 {
+    font-size: 11px;
+    font-family: var(--main-text-font);
+    margin-top: 6px;
+    color: #333333;
+}
+
+.cartegory-right-bottom {
+    justify-content: space-between;
+    margin: 30px 0 20px;
+    width: 100%;
+    text-align: right;
+}
+.cartegory-right-bottom-items {
+    display: inline-block;
+    margin-right: 50px; /* Di chuyển phần tử sang trái khoảng 50px */
+}
+
+.cartegory-right-bottom p {
+    font-family: var(--main-text-font);
+    font-size: 11px;
+}
+
+.cartegory-left ul li {
+    padding: 12px 0;
+}
+.cartegory-left ul ul {
+    display: none;
+}
+
+
+.cartegory-left ul li>a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--main-text-font);
+}
+.cartegory-left ul li ul li{
+    padding-left: 10px;
+}
+.cartegory-left-li ul{
+    display: none;
+}
+.cartegory-left-li.block ul{
+    display: block;
 }

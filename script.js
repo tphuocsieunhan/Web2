@@ -1,10 +1,10 @@
 const header = document.querySelector("header")
-window.addEventListener("scroll",function(){
+window.addEventListener("scroll", function () {
     x = window.pageYOffset
-    if(x>0){
+    if (x > 0) {
         header.classList.add("sticky")
     }
-    else{
+    else {
         header.classList.remove("sticky")
     }
 })
@@ -32,3 +32,34 @@ function slider(index) {
     dotItem[index].classList.add("active")
 }
 setInterval(imgSlide, 5000)
+//scroll button
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// -Menu-item-
+const top = document.querySelector(".top")
+window.addEventListener("scroll", function () {
+    const X = this.pageYOffset;
+    if (x > 1) { top.classList.add("active") }
+    else {
+        top.classList.add("active")
+    }
+})
+//menu-slidebar
+// Lấy ra phần tử button để toggle menu
+const menuToggle = document.getElementById('menu-toggle');
+
+// Lắng nghe sự kiện click trên button
+menuToggle.addEventListener('click', function() {
+    // Lấy ra tất cả các menu con
+    const subMenus = document.querySelectorAll('.cartegory-left ul ul');
+
+    // Duyệt qua từng menu con và toggle lớp CSS 'active'
+    subMenus.forEach(function(subMenu) {
+        subMenu.classList.toggle('active');
+    });
+});
