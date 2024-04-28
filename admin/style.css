@@ -65,3 +65,16 @@ header {
     color: brown;
 
 }
+/* ...........cartegorylist............ */
+.admin-content-right-cartegory_list table {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.admin-content-right-cartegory_list table tr th,td {
+    border: 1px solid #dddddd;
+
+}
+table {
+    border-collapse: collapse;
+}
