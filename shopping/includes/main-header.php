@@ -20,7 +20,7 @@
 <div class="logo">
 	<a href="index.php">
 		
-		<h2>Sốp pinh</h2>
+		<h2>Shopping</h2>
 
 	</a>
 </div>		

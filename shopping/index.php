@@ -123,7 +123,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 							<h4 class="info-box-heading green">Money back</h4>
 						</div>
 					</div>	
-					<h6 class="text">Hoàn tiền trong vòng 30 ngày</h6>
+					<h6 class="text">Refund in 30 days</h6>
 				</div>
 			</div><!-- .col -->
 
@@ -137,7 +137,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 							<h4 class="info-box-heading orange">free shipping</h4>
 						</div>
 					</div>
-					<h6 class="text">Miễn phí tiền ship </h6>	
+					<h6 class="text">Free ship </h6>	
 				</div>
 			</div><!-- .col -->
 
@@ -151,7 +151,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 							<h4 class="info-box-heading red">Black Friday</h4>
 						</div>
 					</div>
-					<h6 class="text">Tất cả đồ dùng giảm 50% </h6>	
+					<h6 class="text">Sale 50% </h6>	
 				</div>
 			</div><!-- .col -->
 		</div><!-- /.row -->
