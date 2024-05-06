@@ -65,7 +65,7 @@ if(isset($_GET['del']))
 											<th>Shippping Address/City/State/Pincode </th>
 											<th>Billing Address/City/State/Pincode </th>
 											<th>Reg. Date </th>
-										
+											
 										</tr>
 									</thead>
 									<tbody>
